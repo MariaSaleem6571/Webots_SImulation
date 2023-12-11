@@ -1,0 +1,22 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ros2_control: 0.11.0 (/opt/ros/foxy/share/ros2_control/cmake)
+CMake Error at CMakeLists.txt:21 (find_package):
+  By not providing "Findros2_navigation.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ros2_navigation", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ros2_navigation"
+  with any of the following names:
+
+    ros2_navigationConfig.cmake
+    ros2_navigation-config.cmake
+
+  Add the installation prefix of "ros2_navigation" to CMAKE_PREFIX_PATH or
+  set "ros2_navigation_DIR" to a directory containing one of the above files.
+  If "ros2_navigation" provides a separate development package or SDK, be
+  sure it has been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/maria/Desktop/projects/ros/build/my_turtlebot_package/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,28 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/TurtleBot3Burger.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5638698249670203 0.5810449000808993 0.5868881022662154 2.0537670716148395
+  position -0.029056425346064563 -0.5873040429454599 15.095977953857274
+}
+RectangleArena {
+  translation 0 -0.01 -0.49
+  floorSize 6 6
+}
+TurtleBot3Burger {
+  hidden position_0_0 -1.5765166949677223e-11
+  hidden position_0_1 8.445667822585479e-12
+  hidden position_0_2 0.0002334329386063227
+  hidden position2_0_2 0.011980804789582246
+  hidden position3_0_2 -2.0309535219852424e-06
+  hidden rotation_10 0.01947896599926086 0.9998102655488916 -5.278877049478205e-05 0.011983078575074043
+  translation -0.3199528571142162 0.32999911886583433 -0.49024890374997526
+  rotation -0.002116831803637692 -0.9999977562635626 8.056646718049519e-05 0.004641909807875363
+}
+DirectionalLight {
+  direction -1 -1 -1
+}
