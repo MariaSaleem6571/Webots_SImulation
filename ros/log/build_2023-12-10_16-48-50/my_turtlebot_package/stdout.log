@@ -1,5 +1,0 @@
--- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
--- Using PYTHON_EXECUTABLE: /usr/bin/python3
--- Found ros2_control: 0.11.0 (/opt/ros/foxy/share/ros2_control/cmake)
--- Configuring incomplete, errors occurred!
-See also "/home/maria/Desktop/projects/ros/build/my_turtlebot_package/CMakeFiles/CMakeOutput.log".
