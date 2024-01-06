@@ -1,10 +1,9 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/robotis/protos/RobotisLds01.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Wall.proto"
 
 WorldInfo {
   info [
@@ -14,8 +13,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.6759169709193548 -0.13970115858851032 -0.7236158060132684 3.5472863886159827
-  position 6.4369667510412905 -1.616589398918134 8.223863442727625
+  orientation 0.39647572876438847 -0.35425469210877725 -0.8469419163199225 4.637188073809179
+  position 5.796933771447373 -4.482360105090569 6.502150182000312
   follow "TurtleBot3Burger:LDS-01"
 }
 TexturedBackground {
@@ -66,98 +65,8 @@ RectangleArena {
   translation 6.34 0 0
   floorSize 5 5
 }
-Wall {
-  translation 4.47 2 0
-  rotation 0 1 0 0
-  size 1.2 1 0.4
-}
-Wall {
-  translation 8.23 2 0
-  rotation 0 1 0 0
-  name "wall(1)"
-  size 1.2 1 0.4
-}
-Wall {
-  translation 8.23 -1.99 0
-  rotation 0 1 0 0
-  name "wall(2)"
-  size 1.2 1 0.4
-}
-Wall {
-  translation 4.45 -1.99 0
-  rotation 0 1 0 0
-  name "wall(3)"
-  size 1.2 1 0.4
-}
-Wall {
-  translation 4.12 0.71 0
-  rotation 0 1 0 0
-  name "wall(4)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 5.84 2.27 0
-  rotation 0 1 0 0
-  name "wall(6)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 7.04 2.27 0
-  rotation 0 1 0 0
-  name "wall(7)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 7.04 0.76 0
-  rotation 0 1 0 0
-  name "wall(8)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 7.04 -2.26 0
-  rotation 0 1 0 0
-  name "wall(14)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 5.85 -2.26 0
-  rotation 0 1 0 0
-  name "wall(15)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 5.82 0.76 0
-  rotation 0 1 0 0
-  name "wall(9)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 5.82 -0.48 0
-  rotation 0 1 0 0
-  name "wall(10)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 7.1 -0.48 0
-  rotation 0 1 0 0
-  name "wall(11)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 8.58 -0.48 0
-  rotation 0 1 0 0
-  name "wall(12)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 8.58 0.74 0
-  rotation 0 1 0 0
-  name "wall(13)"
-  size 0.5 0.5 0.4
-}
-Wall {
-  translation 4.12 -0.53 0
-  rotation 0 1 0 0
-  name "wall(5)"
-  size 0.5 0.5 0.4
+Robot {
+  supervisor TRUE
+  translation -1.48 0 0
+  controller "map_loader.py"
 }
