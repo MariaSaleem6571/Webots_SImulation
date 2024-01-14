@@ -29,6 +29,10 @@ from webots_ros2_driver.webots_launcher import WebotsLauncher
 from webots_ros2_driver.utils import controller_url_prefix
 
 
+
+NUM_ROBOT = 5
+
+
 def get_ros2_nodes(*args):
     package_dir = get_package_share_directory('multi_robot_bringup')
     robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'turtlebot_webots.urdf')).read_text()
@@ -36,7 +40,7 @@ def get_ros2_nodes(*args):
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
 
     # TODO: Revert once the https://github.com/ros-controls/ros2_control/pull/444 PR gets into the release
-    controller_manager_timeout = ['--controller-manager-timeout', '50']
+    controller_manager_timeout = ['--controller-manager-timeout', str(NUM_ROBOT*500)]
     controller_manager_prefix = 'python.exe' if os.name == 'nt' else ''
 
     use_deprecated_spawner_py = 'ROS_DISTRO' in os.environ and os.environ['ROS_DISTRO'] == 'foxy'
@@ -57,40 +61,30 @@ def get_ros2_nodes(*args):
         arguments=['joint_state_broadcaster'] + controller_manager_timeout,
     )
 
-    mappings1 = [('/diffdrive_controller/cmd_vel_unstamped', 'turtle_bot_1/cmd_vel')]
-    mappings2 = [('/diffdrive_controller/cmd_vel_unstamped', 'turtle_bot_2/cmd_vel')]
+    turtlebot_drivers = []
 
-    if 'ROS_DISTRO' in os.environ and os.environ['ROS_DISTRO'] in ['humble', 'rolling']:
-        mappings1.append(('/diffdrive_controller/odom', 'turtle_bot_1/odom'))
-        mappings2.append(('/diffdrive_controller/odom', 'turtle_bot_2/odom'))
+    # spawn multiple robot 
+    for i in range(NUM_ROBOT):
+        mappings = [('/diffdrive_controller/cmd_vel_unstamped', 'turtle_bot_{}/cmd_vel'.format(i))]
 
-    turtlebot_driver_1 = Node(
-        package='webots_ros2_driver',
-        executable='driver',
-        output='screen',
-        additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'TurtleBot3Burger_1'},
-        parameters=[
-            {'robot_description': robot_description,
-             'use_sim_time': use_sim_time,
-             'set_robot_state_publisher': True},
-            ros2_control_params
-        ],
-        remappings=mappings1
-    )
-    turtlebot_driver_2 = Node(
-        package='webots_ros2_driver',
-        executable='driver',
-        output='screen',
-        additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'TurtleBot3Burger_2'},
-        parameters=[
-            {'robot_description': robot_description,
-             'use_sim_time': use_sim_time,
-             'set_robot_state_publisher': True},
-            ros2_control_params
-        ],
-        remappings=mappings2
-    )
-
+        if 'ROS_DISTRO' in os.environ and os.environ['ROS_DISTRO'] in ['humble', 'rolling']:
+            mappings.append(('/diffdrive_controller/odom', 'turtle_bot_{}/odom'.format(i)))
+    
+        turtlebot_driver = Node(
+            package='webots_ros2_driver',
+            executable='driver',
+            output='screen',
+            additional_env={'WEBOTS_CONTROLLER_URL': controller_url_prefix() + 'TurtleBot3Burger_{}'.format(i)},
+            parameters=[
+                {'robot_description': robot_description,
+                 'use_sim_time': use_sim_time,
+                 'set_robot_state_publisher': True},
+                ros2_control_params
+            ],
+            remappings=mappings
+        )
+        turtlebot_drivers.append(turtlebot_driver)
+    
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -111,10 +105,8 @@ def get_ros2_nodes(*args):
         joint_state_broadcaster_spawner,
         diffdrive_controller_spawner,
         robot_state_publisher,
-        turtlebot_driver_1,
-        turtlebot_driver_2,
         footprint_publisher,
-    ]
+    ] + turtlebot_drivers
 
 
 def generate_launch_description():

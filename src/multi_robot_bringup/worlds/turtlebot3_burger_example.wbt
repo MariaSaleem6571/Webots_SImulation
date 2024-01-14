@@ -24,7 +24,7 @@ TexturedBackground {
 }
 TurtleBot3Burger {
   translation 1.49 0 0
-  name "TurtleBot3Burger_1"
+  name "TurtleBot3Burger_0"
   controller "<extern>"
   controllerArgs [
     ""
@@ -44,7 +44,67 @@ TurtleBot3Burger {
 }
 TurtleBot3Burger {
   translation 2.29 0 0.1
+  name "TurtleBot3Burger_1"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation 1.29 0 0.1
   name "TurtleBot3Burger_2"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation 1.0 0 0.1
+  name "TurtleBot3Burger_3"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation 1.1 0 0.1
+  name "TurtleBot3Burger_4"
   controller "<extern>"
   controllerArgs [
     ""
@@ -65,11 +125,6 @@ TurtleBot3Burger {
 RectangleArena {
   floorSize 14.25 8.25
   wallHeight 0.01
-}
-Robot {
-  translation -1.48 0 0
-  controller "map_loader.py"
-  supervisor TRUE
 }
 Wall {
   translation -7.000 4.000 0.000
