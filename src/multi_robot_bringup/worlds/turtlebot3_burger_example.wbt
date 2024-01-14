@@ -14,8 +14,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.6759169709193548 -0.13970115858851032 -0.7236158060132684 3.5472863886159827
-  position 6.4369667510412905 -1.616589398918134 8.223863442727625
+  orientation 0.673674734877502 -0.1406828185387477 -0.7255140909422239 3.244123628785452
+  position -1.2121730431610924 -1.9835923559670514 12.310783686345742
   follow "TurtleBot3Burger:LDS-01"
 }
 TexturedBackground {
@@ -23,7 +23,7 @@ TexturedBackground {
   skybox FALSE
 }
 TurtleBot3Burger {
-  translation 6.36 0 0
+  translation 1.49 0 0
   name "TurtleBot3Burger_1"
   controller "<extern>"
   controllerArgs [
@@ -43,7 +43,7 @@ TurtleBot3Burger {
   ]
 }
 TurtleBot3Burger {
-  translation 7.39 0 0.1
+  translation 2.29 0 0.1
   name "TurtleBot3Burger_2"
   controller "<extern>"
   controllerArgs [
@@ -63,101 +63,3031 @@ TurtleBot3Burger {
   ]
 }
 RectangleArena {
-  translation 6.34 0 0
-  floorSize 5 5
+  floorSize 14.25 8.25
+  wallHeight 0.01
+}
+Robot {
+  translation -1.48 0 0
+  controller "map_loader.py"
+  supervisor TRUE
 }
 Wall {
-  translation 4.47 2 0
-  rotation 0 1 0 0
-  size 1.2 1 0.4
+  translation -7.000 4.000 0.000
+  name "wall_0_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 8.23 2 0
-  rotation 0 1 0 0
-  name "wall(1)"
-  size 1.2 1 0.4
+  translation -6.750 4.000 0.000
+  name "wall_1_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 8.23 -1.99 0
-  rotation 0 1 0 0
-  name "wall(2)"
-  size 1.2 1 0.4
+  translation -6.500 4.000 0.000
+  name "wall_2_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 4.45 -1.99 0
-  rotation 0 1 0 0
-  name "wall(3)"
-  size 1.2 1 0.4
+  translation -6.250 4.000 0.000
+  name "wall_3_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 4.12 0.71 0
-  rotation 0 1 0 0
-  name "wall(4)"
-  size 0.5 0.5 0.4
+  translation -5.500 4.000 0.000
+  name "wall_6_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 5.84 2.27 0
-  rotation 0 1 0 0
-  name "wall(6)"
-  size 0.5 0.5 0.4
+  translation -5.250 4.000 0.000
+  name "wall_7_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 7.04 2.27 0
-  rotation 0 1 0 0
-  name "wall(7)"
-  size 0.5 0.5 0.4
+  translation -5.000 4.000 0.000
+  name "wall_8_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 7.04 0.76 0
-  rotation 0 1 0 0
-  name "wall(8)"
-  size 0.5 0.5 0.4
+  translation -3.750 4.000 0.000
+  name "wall_13_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 7.04 -2.26 0
-  rotation 0 1 0 0
-  name "wall(14)"
-  size 0.5 0.5 0.4
+  translation -3.500 4.000 0.000
+  name "wall_14_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 5.85 -2.26 0
-  rotation 0 1 0 0
-  name "wall(15)"
-  size 0.5 0.5 0.4
+  translation -3.250 4.000 0.000
+  name "wall_15_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 5.82 0.76 0
-  rotation 0 1 0 0
-  name "wall(9)"
-  size 0.5 0.5 0.4
+  translation -2.000 4.000 0.000
+  name "wall_20_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 5.82 -0.48 0
-  rotation 0 1 0 0
-  name "wall(10)"
-  size 0.5 0.5 0.4
+  translation -1.750 4.000 0.000
+  name "wall_21_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 7.1 -0.48 0
-  rotation 0 1 0 0
-  name "wall(11)"
-  size 0.5 0.5 0.4
+  translation -1.500 4.000 0.000
+  name "wall_22_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 8.58 -0.48 0
-  rotation 0 1 0 0
-  name "wall(12)"
-  size 0.5 0.5 0.4
+  translation -0.250 4.000 0.000
+  name "wall_27_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 8.58 0.74 0
-  rotation 0 1 0 0
-  name "wall(13)"
-  size 0.5 0.5 0.4
+  translation 0.000 4.000 0.000
+  name "wall_28_0"
+  size 0.250 0.250 0.250
 }
 Wall {
-  translation 4.12 -0.53 0
-  rotation 0 1 0 0
-  name "wall(5)"
-  size 0.5 0.5 0.4
+  translation 0.250 4.000 0.000
+  name "wall_29_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 4.000 0.000
+  name "wall_34_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 4.000 0.000
+  name "wall_35_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 4.000 0.000
+  name "wall_36_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 4.000 0.000
+  name "wall_41_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 4.000 0.000
+  name "wall_42_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 4.000 0.000
+  name "wall_43_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 4.000 0.000
+  name "wall_48_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 4.000 0.000
+  name "wall_49_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 4.000 0.000
+  name "wall_50_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 4.000 0.000
+  name "wall_53_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 4.000 0.000
+  name "wall_54_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 4.000 0.000
+  name "wall_55_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 4.000 0.000
+  name "wall_56_0"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 3.750 0.000
+  name "wall_0_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 3.750 0.000
+  name "wall_1_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 3.750 0.000
+  name "wall_2_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 3.750 0.000
+  name "wall_3_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.500 3.750 0.000
+  name "wall_6_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.250 3.750 0.000
+  name "wall_7_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 3.750 0.000
+  name "wall_8_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 3.750 0.000
+  name "wall_13_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 3.750 0.000
+  name "wall_14_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.250 3.750 0.000
+  name "wall_15_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 3.750 0.000
+  name "wall_20_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 3.750 0.000
+  name "wall_21_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 3.750 0.000
+  name "wall_22_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.250 3.750 0.000
+  name "wall_27_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 3.750 0.000
+  name "wall_28_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 3.750 0.000
+  name "wall_29_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 3.750 0.000
+  name "wall_34_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 3.750 0.000
+  name "wall_35_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 3.750 0.000
+  name "wall_36_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 3.750 0.000
+  name "wall_41_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 3.750 0.000
+  name "wall_42_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 3.750 0.000
+  name "wall_43_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 3.750 0.000
+  name "wall_48_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 3.750 0.000
+  name "wall_49_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 3.750 0.000
+  name "wall_50_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 3.750 0.000
+  name "wall_53_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 3.750 0.000
+  name "wall_54_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 3.750 0.000
+  name "wall_55_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 3.750 0.000
+  name "wall_56_1"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 3.500 0.000
+  name "wall_0_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 3.500 0.000
+  name "wall_1_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 3.500 0.000
+  name "wall_2_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 3.500 0.000
+  name "wall_3_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.500 3.500 0.000
+  name "wall_6_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.250 3.500 0.000
+  name "wall_7_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 3.500 0.000
+  name "wall_8_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 3.500 0.000
+  name "wall_13_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 3.500 0.000
+  name "wall_14_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.250 3.500 0.000
+  name "wall_15_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 3.500 0.000
+  name "wall_20_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 3.500 0.000
+  name "wall_21_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 3.500 0.000
+  name "wall_22_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.250 3.500 0.000
+  name "wall_27_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 3.500 0.000
+  name "wall_28_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 3.500 0.000
+  name "wall_29_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 3.500 0.000
+  name "wall_34_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 3.500 0.000
+  name "wall_35_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 3.500 0.000
+  name "wall_36_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 3.500 0.000
+  name "wall_41_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 3.500 0.000
+  name "wall_42_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 3.500 0.000
+  name "wall_43_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 3.500 0.000
+  name "wall_48_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 3.500 0.000
+  name "wall_49_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 3.500 0.000
+  name "wall_50_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 3.500 0.000
+  name "wall_53_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 3.500 0.000
+  name "wall_54_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 3.500 0.000
+  name "wall_55_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 3.500 0.000
+  name "wall_56_2"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 3.250 0.000
+  name "wall_0_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 3.250 0.000
+  name "wall_1_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 3.250 0.000
+  name "wall_2_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 3.250 0.000
+  name "wall_3_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 3.250 0.000
+  name "wall_53_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 3.250 0.000
+  name "wall_54_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 3.250 0.000
+  name "wall_55_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 3.250 0.000
+  name "wall_56_3"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 2.500 0.000
+  name "wall_0_6"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 2.500 0.000
+  name "wall_1_6"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 2.500 0.000
+  name "wall_2_6"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 2.250 0.000
+  name "wall_0_7"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 2.250 0.000
+  name "wall_1_7"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 2.250 0.000
+  name "wall_2_7"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 2.000 0.000
+  name "wall_0_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 2.000 0.000
+  name "wall_1_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 2.000 0.000
+  name "wall_2_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 2.000 0.000
+  name "wall_8_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 2.000 0.000
+  name "wall_9_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 2.000 0.000
+  name "wall_10_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 2.000 0.000
+  name "wall_12_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 2.000 0.000
+  name "wall_13_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 2.000 0.000
+  name "wall_14_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 2.000 0.000
+  name "wall_16_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 2.000 0.000
+  name "wall_17_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 2.000 0.000
+  name "wall_18_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 2.000 0.000
+  name "wall_20_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 2.000 0.000
+  name "wall_21_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 2.000 0.000
+  name "wall_22_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 2.000 0.000
+  name "wall_24_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 2.000 0.000
+  name "wall_25_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 2.000 0.000
+  name "wall_26_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 2.000 0.000
+  name "wall_28_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 2.000 0.000
+  name "wall_29_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 2.000 0.000
+  name "wall_30_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 2.000 0.000
+  name "wall_32_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 2.000 0.000
+  name "wall_33_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 2.000 0.000
+  name "wall_34_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 2.000 0.000
+  name "wall_36_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 2.000 0.000
+  name "wall_37_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 2.000 0.000
+  name "wall_38_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 2.000 0.000
+  name "wall_40_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 2.000 0.000
+  name "wall_41_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 2.000 0.000
+  name "wall_42_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 2.000 0.000
+  name "wall_44_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 2.000 0.000
+  name "wall_45_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 2.000 0.000
+  name "wall_46_8"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 1.750 0.000
+  name "wall_8_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 1.750 0.000
+  name "wall_9_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 1.750 0.000
+  name "wall_10_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 1.750 0.000
+  name "wall_12_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 1.750 0.000
+  name "wall_13_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 1.750 0.000
+  name "wall_14_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 1.750 0.000
+  name "wall_16_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 1.750 0.000
+  name "wall_17_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 1.750 0.000
+  name "wall_18_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 1.750 0.000
+  name "wall_20_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 1.750 0.000
+  name "wall_21_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 1.750 0.000
+  name "wall_22_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 1.750 0.000
+  name "wall_24_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 1.750 0.000
+  name "wall_25_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 1.750 0.000
+  name "wall_26_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 1.750 0.000
+  name "wall_28_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 1.750 0.000
+  name "wall_29_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 1.750 0.000
+  name "wall_30_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 1.750 0.000
+  name "wall_32_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 1.750 0.000
+  name "wall_33_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 1.750 0.000
+  name "wall_34_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 1.750 0.000
+  name "wall_36_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 1.750 0.000
+  name "wall_37_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 1.750 0.000
+  name "wall_38_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 1.750 0.000
+  name "wall_40_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 1.750 0.000
+  name "wall_41_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 1.750 0.000
+  name "wall_42_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 1.750 0.000
+  name "wall_44_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 1.750 0.000
+  name "wall_45_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 1.750 0.000
+  name "wall_46_9"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 1.500 0.000
+  name "wall_54_10"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 1.500 0.000
+  name "wall_55_10"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 1.500 0.000
+  name "wall_56_10"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 1.250 0.000
+  name "wall_8_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 1.250 0.000
+  name "wall_9_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 1.250 0.000
+  name "wall_10_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 1.250 0.000
+  name "wall_12_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 1.250 0.000
+  name "wall_13_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 1.250 0.000
+  name "wall_14_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 1.250 0.000
+  name "wall_16_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 1.250 0.000
+  name "wall_17_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 1.250 0.000
+  name "wall_18_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 1.250 0.000
+  name "wall_20_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 1.250 0.000
+  name "wall_21_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 1.250 0.000
+  name "wall_22_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 1.250 0.000
+  name "wall_24_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 1.250 0.000
+  name "wall_25_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 1.250 0.000
+  name "wall_26_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 1.250 0.000
+  name "wall_28_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 1.250 0.000
+  name "wall_29_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 1.250 0.000
+  name "wall_30_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 1.250 0.000
+  name "wall_32_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 1.250 0.000
+  name "wall_33_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 1.250 0.000
+  name "wall_34_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 1.250 0.000
+  name "wall_36_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 1.250 0.000
+  name "wall_37_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 1.250 0.000
+  name "wall_38_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 1.250 0.000
+  name "wall_40_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 1.250 0.000
+  name "wall_41_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 1.250 0.000
+  name "wall_42_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 1.250 0.000
+  name "wall_44_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 1.250 0.000
+  name "wall_45_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 1.250 0.000
+  name "wall_46_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 1.250 0.000
+  name "wall_54_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 1.250 0.000
+  name "wall_55_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 1.250 0.000
+  name "wall_56_11"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 1.000 0.000
+  name "wall_8_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 1.000 0.000
+  name "wall_9_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 1.000 0.000
+  name "wall_10_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 1.000 0.000
+  name "wall_12_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 1.000 0.000
+  name "wall_13_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 1.000 0.000
+  name "wall_14_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 1.000 0.000
+  name "wall_16_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 1.000 0.000
+  name "wall_17_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 1.000 0.000
+  name "wall_18_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 1.000 0.000
+  name "wall_20_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 1.000 0.000
+  name "wall_21_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 1.000 0.000
+  name "wall_22_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 1.000 0.000
+  name "wall_24_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 1.000 0.000
+  name "wall_25_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 1.000 0.000
+  name "wall_26_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 1.000 0.000
+  name "wall_28_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 1.000 0.000
+  name "wall_29_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 1.000 0.000
+  name "wall_30_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 1.000 0.000
+  name "wall_32_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 1.000 0.000
+  name "wall_33_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 1.000 0.000
+  name "wall_34_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 1.000 0.000
+  name "wall_36_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 1.000 0.000
+  name "wall_37_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 1.000 0.000
+  name "wall_38_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 1.000 0.000
+  name "wall_40_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 1.000 0.000
+  name "wall_41_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 1.000 0.000
+  name "wall_42_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 1.000 0.000
+  name "wall_44_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 1.000 0.000
+  name "wall_45_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 1.000 0.000
+  name "wall_46_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 1.000 0.000
+  name "wall_54_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 1.000 0.000
+  name "wall_55_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 1.000 0.000
+  name "wall_56_12"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 0.750 0.000
+  name "wall_0_13"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 0.750 0.000
+  name "wall_1_13"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 0.750 0.000
+  name "wall_2_13"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 0.500 0.000
+  name "wall_0_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 0.500 0.000
+  name "wall_1_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 0.500 0.000
+  name "wall_2_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 0.500 0.000
+  name "wall_8_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 0.500 0.000
+  name "wall_9_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 0.500 0.000
+  name "wall_10_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 0.500 0.000
+  name "wall_12_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 0.500 0.000
+  name "wall_13_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 0.500 0.000
+  name "wall_14_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 0.500 0.000
+  name "wall_16_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 0.500 0.000
+  name "wall_17_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 0.500 0.000
+  name "wall_18_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 0.500 0.000
+  name "wall_20_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 0.500 0.000
+  name "wall_21_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 0.500 0.000
+  name "wall_22_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 0.500 0.000
+  name "wall_24_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 0.500 0.000
+  name "wall_25_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 0.500 0.000
+  name "wall_26_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 0.500 0.000
+  name "wall_28_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 0.500 0.000
+  name "wall_29_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 0.500 0.000
+  name "wall_30_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 0.500 0.000
+  name "wall_32_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 0.500 0.000
+  name "wall_33_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 0.500 0.000
+  name "wall_34_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 0.500 0.000
+  name "wall_36_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 0.500 0.000
+  name "wall_37_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 0.500 0.000
+  name "wall_38_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 0.500 0.000
+  name "wall_40_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 0.500 0.000
+  name "wall_41_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 0.500 0.000
+  name "wall_42_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 0.500 0.000
+  name "wall_44_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 0.500 0.000
+  name "wall_45_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 0.500 0.000
+  name "wall_46_14"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 0.250 0.000
+  name "wall_0_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 0.250 0.000
+  name "wall_1_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 0.250 0.000
+  name "wall_2_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 0.250 0.000
+  name "wall_8_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 0.250 0.000
+  name "wall_9_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 0.250 0.000
+  name "wall_10_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 0.250 0.000
+  name "wall_12_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 0.250 0.000
+  name "wall_13_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 0.250 0.000
+  name "wall_14_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 0.250 0.000
+  name "wall_16_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 0.250 0.000
+  name "wall_17_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 0.250 0.000
+  name "wall_18_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 0.250 0.000
+  name "wall_20_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 0.250 0.000
+  name "wall_21_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 0.250 0.000
+  name "wall_22_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 0.250 0.000
+  name "wall_24_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 0.250 0.000
+  name "wall_25_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 0.250 0.000
+  name "wall_26_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 0.250 0.000
+  name "wall_28_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 0.250 0.000
+  name "wall_29_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 0.250 0.000
+  name "wall_30_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 0.250 0.000
+  name "wall_32_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 0.250 0.000
+  name "wall_33_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 0.250 0.000
+  name "wall_34_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 0.250 0.000
+  name "wall_36_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 0.250 0.000
+  name "wall_37_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 0.250 0.000
+  name "wall_38_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 0.250 0.000
+  name "wall_40_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 0.250 0.000
+  name "wall_41_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 0.250 0.000
+  name "wall_42_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 0.250 0.000
+  name "wall_44_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 0.250 0.000
+  name "wall_45_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 0.250 0.000
+  name "wall_46_15"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -0.250 0.000
+  name "wall_8_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -0.250 0.000
+  name "wall_9_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -0.250 0.000
+  name "wall_10_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -0.250 0.000
+  name "wall_12_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -0.250 0.000
+  name "wall_13_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -0.250 0.000
+  name "wall_14_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -0.250 0.000
+  name "wall_16_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -0.250 0.000
+  name "wall_17_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -0.250 0.000
+  name "wall_18_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -0.250 0.000
+  name "wall_20_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -0.250 0.000
+  name "wall_21_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -0.250 0.000
+  name "wall_22_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -0.250 0.000
+  name "wall_24_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -0.250 0.000
+  name "wall_25_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -0.250 0.000
+  name "wall_26_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -0.250 0.000
+  name "wall_28_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -0.250 0.000
+  name "wall_29_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -0.250 0.000
+  name "wall_30_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -0.250 0.000
+  name "wall_32_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -0.250 0.000
+  name "wall_33_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -0.250 0.000
+  name "wall_34_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -0.250 0.000
+  name "wall_36_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -0.250 0.000
+  name "wall_37_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -0.250 0.000
+  name "wall_38_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -0.250 0.000
+  name "wall_40_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -0.250 0.000
+  name "wall_41_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -0.250 0.000
+  name "wall_42_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -0.250 0.000
+  name "wall_44_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -0.250 0.000
+  name "wall_45_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -0.250 0.000
+  name "wall_46_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -0.250 0.000
+  name "wall_54_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -0.250 0.000
+  name "wall_55_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -0.250 0.000
+  name "wall_56_17"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -0.500 0.000
+  name "wall_8_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -0.500 0.000
+  name "wall_9_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -0.500 0.000
+  name "wall_10_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -0.500 0.000
+  name "wall_12_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -0.500 0.000
+  name "wall_13_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -0.500 0.000
+  name "wall_14_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -0.500 0.000
+  name "wall_16_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -0.500 0.000
+  name "wall_17_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -0.500 0.000
+  name "wall_18_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -0.500 0.000
+  name "wall_20_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -0.500 0.000
+  name "wall_21_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -0.500 0.000
+  name "wall_22_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -0.500 0.000
+  name "wall_24_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -0.500 0.000
+  name "wall_25_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -0.500 0.000
+  name "wall_26_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -0.500 0.000
+  name "wall_28_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -0.500 0.000
+  name "wall_29_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -0.500 0.000
+  name "wall_30_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -0.500 0.000
+  name "wall_32_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -0.500 0.000
+  name "wall_33_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -0.500 0.000
+  name "wall_34_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -0.500 0.000
+  name "wall_36_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -0.500 0.000
+  name "wall_37_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -0.500 0.000
+  name "wall_38_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -0.500 0.000
+  name "wall_40_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -0.500 0.000
+  name "wall_41_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -0.500 0.000
+  name "wall_42_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -0.500 0.000
+  name "wall_44_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -0.500 0.000
+  name "wall_45_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -0.500 0.000
+  name "wall_46_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -0.500 0.000
+  name "wall_54_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -0.500 0.000
+  name "wall_55_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -0.500 0.000
+  name "wall_56_18"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -0.750 0.000
+  name "wall_54_19"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -0.750 0.000
+  name "wall_55_19"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -0.750 0.000
+  name "wall_56_19"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -1.000 0.000
+  name "wall_0_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -1.000 0.000
+  name "wall_1_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -1.000 0.000
+  name "wall_2_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -1.000 0.000
+  name "wall_8_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -1.000 0.000
+  name "wall_9_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -1.000 0.000
+  name "wall_10_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -1.000 0.000
+  name "wall_12_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -1.000 0.000
+  name "wall_13_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -1.000 0.000
+  name "wall_14_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -1.000 0.000
+  name "wall_16_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -1.000 0.000
+  name "wall_17_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -1.000 0.000
+  name "wall_18_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -1.000 0.000
+  name "wall_20_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -1.000 0.000
+  name "wall_21_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -1.000 0.000
+  name "wall_22_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -1.000 0.000
+  name "wall_24_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -1.000 0.000
+  name "wall_25_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -1.000 0.000
+  name "wall_26_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -1.000 0.000
+  name "wall_28_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -1.000 0.000
+  name "wall_29_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -1.000 0.000
+  name "wall_30_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -1.000 0.000
+  name "wall_32_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -1.000 0.000
+  name "wall_33_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -1.000 0.000
+  name "wall_34_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -1.000 0.000
+  name "wall_36_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -1.000 0.000
+  name "wall_37_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -1.000 0.000
+  name "wall_38_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -1.000 0.000
+  name "wall_40_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -1.000 0.000
+  name "wall_41_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -1.000 0.000
+  name "wall_42_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -1.000 0.000
+  name "wall_44_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -1.000 0.000
+  name "wall_45_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -1.000 0.000
+  name "wall_46_20"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -1.250 0.000
+  name "wall_0_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -1.250 0.000
+  name "wall_1_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -1.250 0.000
+  name "wall_2_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -1.250 0.000
+  name "wall_8_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -1.250 0.000
+  name "wall_9_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -1.250 0.000
+  name "wall_10_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -1.250 0.000
+  name "wall_12_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -1.250 0.000
+  name "wall_13_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -1.250 0.000
+  name "wall_14_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -1.250 0.000
+  name "wall_16_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -1.250 0.000
+  name "wall_17_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -1.250 0.000
+  name "wall_18_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -1.250 0.000
+  name "wall_20_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -1.250 0.000
+  name "wall_21_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -1.250 0.000
+  name "wall_22_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -1.250 0.000
+  name "wall_24_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -1.250 0.000
+  name "wall_25_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -1.250 0.000
+  name "wall_26_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -1.250 0.000
+  name "wall_28_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -1.250 0.000
+  name "wall_29_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -1.250 0.000
+  name "wall_30_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -1.250 0.000
+  name "wall_32_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -1.250 0.000
+  name "wall_33_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -1.250 0.000
+  name "wall_34_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -1.250 0.000
+  name "wall_36_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -1.250 0.000
+  name "wall_37_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -1.250 0.000
+  name "wall_38_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -1.250 0.000
+  name "wall_40_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -1.250 0.000
+  name "wall_41_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -1.250 0.000
+  name "wall_42_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -1.250 0.000
+  name "wall_44_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -1.250 0.000
+  name "wall_45_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -1.250 0.000
+  name "wall_46_21"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -1.500 0.000
+  name "wall_0_22"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -1.500 0.000
+  name "wall_1_22"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -1.500 0.000
+  name "wall_2_22"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -1.750 0.000
+  name "wall_8_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -1.750 0.000
+  name "wall_9_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -1.750 0.000
+  name "wall_10_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -1.750 0.000
+  name "wall_12_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -1.750 0.000
+  name "wall_13_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -1.750 0.000
+  name "wall_14_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -1.750 0.000
+  name "wall_16_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -1.750 0.000
+  name "wall_17_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -1.750 0.000
+  name "wall_18_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -1.750 0.000
+  name "wall_20_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -1.750 0.000
+  name "wall_21_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -1.750 0.000
+  name "wall_22_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -1.750 0.000
+  name "wall_24_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -1.750 0.000
+  name "wall_25_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -1.750 0.000
+  name "wall_26_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -1.750 0.000
+  name "wall_28_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -1.750 0.000
+  name "wall_29_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -1.750 0.000
+  name "wall_30_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -1.750 0.000
+  name "wall_32_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -1.750 0.000
+  name "wall_33_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -1.750 0.000
+  name "wall_34_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -1.750 0.000
+  name "wall_36_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -1.750 0.000
+  name "wall_37_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -1.750 0.000
+  name "wall_38_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -1.750 0.000
+  name "wall_40_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -1.750 0.000
+  name "wall_41_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -1.750 0.000
+  name "wall_42_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -1.750 0.000
+  name "wall_44_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -1.750 0.000
+  name "wall_45_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -1.750 0.000
+  name "wall_46_23"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -2.000 0.000
+  name "wall_8_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.750 -2.000 0.000
+  name "wall_9_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.500 -2.000 0.000
+  name "wall_10_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -4.000 -2.000 0.000
+  name "wall_12_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -2.000 0.000
+  name "wall_13_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -2.000 0.000
+  name "wall_14_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.000 -2.000 0.000
+  name "wall_16_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.750 -2.000 0.000
+  name "wall_17_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.500 -2.000 0.000
+  name "wall_18_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -2.000 0.000
+  name "wall_20_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -2.000 0.000
+  name "wall_21_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -2.000 0.000
+  name "wall_22_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.000 -2.000 0.000
+  name "wall_24_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.750 -2.000 0.000
+  name "wall_25_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.500 -2.000 0.000
+  name "wall_26_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -2.000 0.000
+  name "wall_28_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -2.000 0.000
+  name "wall_29_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.500 -2.000 0.000
+  name "wall_30_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.000 -2.000 0.000
+  name "wall_32_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.250 -2.000 0.000
+  name "wall_33_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -2.000 0.000
+  name "wall_34_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -2.000 0.000
+  name "wall_36_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.250 -2.000 0.000
+  name "wall_37_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.500 -2.000 0.000
+  name "wall_38_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.000 -2.000 0.000
+  name "wall_40_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -2.000 0.000
+  name "wall_41_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -2.000 0.000
+  name "wall_42_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.000 -2.000 0.000
+  name "wall_44_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.250 -2.000 0.000
+  name "wall_45_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 4.500 -2.000 0.000
+  name "wall_46_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -2.000 0.000
+  name "wall_54_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -2.000 0.000
+  name "wall_55_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -2.000 0.000
+  name "wall_56_24"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -2.250 0.000
+  name "wall_54_25"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -2.250 0.000
+  name "wall_55_25"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -2.250 0.000
+  name "wall_56_25"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -2.500 0.000
+  name "wall_54_26"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -2.500 0.000
+  name "wall_55_26"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -2.500 0.000
+  name "wall_56_26"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -3.250 0.000
+  name "wall_0_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -3.250 0.000
+  name "wall_1_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -3.250 0.000
+  name "wall_2_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 -3.250 0.000
+  name "wall_3_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 -3.250 0.000
+  name "wall_53_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -3.250 0.000
+  name "wall_54_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -3.250 0.000
+  name "wall_55_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -3.250 0.000
+  name "wall_56_29"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -3.500 0.000
+  name "wall_0_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -3.500 0.000
+  name "wall_1_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -3.500 0.000
+  name "wall_2_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 -3.500 0.000
+  name "wall_3_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.500 -3.500 0.000
+  name "wall_6_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.250 -3.500 0.000
+  name "wall_7_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -3.500 0.000
+  name "wall_8_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -3.500 0.000
+  name "wall_13_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -3.500 0.000
+  name "wall_14_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.250 -3.500 0.000
+  name "wall_15_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -3.500 0.000
+  name "wall_20_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -3.500 0.000
+  name "wall_21_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -3.500 0.000
+  name "wall_22_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.250 -3.500 0.000
+  name "wall_27_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -3.500 0.000
+  name "wall_28_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -3.500 0.000
+  name "wall_29_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -3.500 0.000
+  name "wall_34_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 -3.500 0.000
+  name "wall_35_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -3.500 0.000
+  name "wall_36_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -3.500 0.000
+  name "wall_41_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -3.500 0.000
+  name "wall_42_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 -3.500 0.000
+  name "wall_43_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 -3.500 0.000
+  name "wall_48_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 -3.500 0.000
+  name "wall_49_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 -3.500 0.000
+  name "wall_50_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 -3.500 0.000
+  name "wall_53_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -3.500 0.000
+  name "wall_54_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -3.500 0.000
+  name "wall_55_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -3.500 0.000
+  name "wall_56_30"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -3.750 0.000
+  name "wall_0_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -3.750 0.000
+  name "wall_1_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -3.750 0.000
+  name "wall_2_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 -3.750 0.000
+  name "wall_3_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.500 -3.750 0.000
+  name "wall_6_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.250 -3.750 0.000
+  name "wall_7_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -3.750 0.000
+  name "wall_8_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -3.750 0.000
+  name "wall_13_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -3.750 0.000
+  name "wall_14_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.250 -3.750 0.000
+  name "wall_15_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -3.750 0.000
+  name "wall_20_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -3.750 0.000
+  name "wall_21_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -3.750 0.000
+  name "wall_22_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.250 -3.750 0.000
+  name "wall_27_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -3.750 0.000
+  name "wall_28_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -3.750 0.000
+  name "wall_29_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -3.750 0.000
+  name "wall_34_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 -3.750 0.000
+  name "wall_35_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -3.750 0.000
+  name "wall_36_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -3.750 0.000
+  name "wall_41_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -3.750 0.000
+  name "wall_42_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 -3.750 0.000
+  name "wall_43_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 -3.750 0.000
+  name "wall_48_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 -3.750 0.000
+  name "wall_49_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 -3.750 0.000
+  name "wall_50_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 -3.750 0.000
+  name "wall_53_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -3.750 0.000
+  name "wall_54_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -3.750 0.000
+  name "wall_55_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -3.750 0.000
+  name "wall_56_31"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -7.000 -4.000 0.000
+  name "wall_0_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.750 -4.000 0.000
+  name "wall_1_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.500 -4.000 0.000
+  name "wall_2_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -6.250 -4.000 0.000
+  name "wall_3_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.500 -4.000 0.000
+  name "wall_6_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.250 -4.000 0.000
+  name "wall_7_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -5.000 -4.000 0.000
+  name "wall_8_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.750 -4.000 0.000
+  name "wall_13_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.500 -4.000 0.000
+  name "wall_14_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -3.250 -4.000 0.000
+  name "wall_15_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -2.000 -4.000 0.000
+  name "wall_20_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.750 -4.000 0.000
+  name "wall_21_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -1.500 -4.000 0.000
+  name "wall_22_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation -0.250 -4.000 0.000
+  name "wall_27_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.000 -4.000 0.000
+  name "wall_28_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 0.250 -4.000 0.000
+  name "wall_29_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.500 -4.000 0.000
+  name "wall_34_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 1.750 -4.000 0.000
+  name "wall_35_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 2.000 -4.000 0.000
+  name "wall_36_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.250 -4.000 0.000
+  name "wall_41_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.500 -4.000 0.000
+  name "wall_42_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 3.750 -4.000 0.000
+  name "wall_43_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.000 -4.000 0.000
+  name "wall_48_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.250 -4.000 0.000
+  name "wall_49_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 5.500 -4.000 0.000
+  name "wall_50_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.250 -4.000 0.000
+  name "wall_53_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.500 -4.000 0.000
+  name "wall_54_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 6.750 -4.000 0.000
+  name "wall_55_32"
+  size 0.250 0.250 0.250
+}
+Wall {
+  translation 7.000 -4.000 0.000
+  name "wall_56_32"
+  size 0.250 0.250 0.250
 }

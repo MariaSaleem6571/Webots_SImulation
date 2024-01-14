@@ -1,0 +1,77 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/robotis/protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+  info [
+    "Simple TurtleBot3 Burger simulation that can be controlled by a ROS."
+  ]
+  title "ROS2 simulation of the TurtleBot3 Burger robot"
+  basicTimeStep 20
+}
+Viewpoint {
+  orientation 0.26983656448337373 -0.30278115419745766 -0.9140633463445874 4.316152809118774
+  position 1.1498736435876222 -2.829379731434516 3.693711423807614
+  follow "TurtleBot3Burger:LDS-01"
+}
+TexturedBackground {
+  texture "empty_office"
+  skybox FALSE
+}
+TurtleBot3Burger {
+  translation 1.49 0 0
+  name "TurtleBot3Burger_1"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation 2.29 0 0.1
+  name "TurtleBot3Burger_2"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+RectangleArena {
+  floorSize 5 5
+  wallHeight 0.01
+}
+Robot {
+  translation -1.48 0 0
+  controller "map_loader.py"
+  supervisor TRUE
+}
+Wall {
+  translation 0.125 0.125 0.000
+  size 0.250 0.250 0.250
+}
