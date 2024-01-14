@@ -19,6 +19,7 @@ def create_wall(supervisor, x, y, z, width, height, depth):
     ''')
     return wall_node
 
+
 def main():
     supervisor = Supervisor()
 
@@ -28,16 +29,20 @@ def main():
     wall_depth = 1
 
     # Read the map file
-    with open('/home/maria/Desktop/Webots_SImulation/src/multi_robot_bringup/worlds/map.txt', 'r') as file:
-        map_data = file.readlines()
-        print(f"Map file read successfully. Number of rows: {len(map_data)}")  
+    # with open('/home/maria/Desktop/Webots_SImulation/src/multi_robot_bringup/worlds/map.txt', 'r') as file:
+    #     map_data = file.readlines()
+    #     print(f"Map file read successfully. Number of rows: {len(map_data)}")  
 
-    # Process each character in the map
-    for y, row in enumerate(map_data):
-        for x, char in enumerate(row.strip()):
-            if char == '@':
-                create_wall(supervisor, x * wall_width, wall_height / 2, y * wall_depth, 
-                            wall_width, wall_height, wall_depth)
+    # # Process each character in the map
+    # for y, row in enumerate(map_data):
+    #     for x, char in enumerate(row.strip()):
+    #         if char == '@':
+    #             create_wall(supervisor, x * wall_width, wall_height / 2, y * wall_depth, 
+    #                         wall_width, wall_height, wall_depth)
+
+    x = 1
+    y = 1
+    create_wall(supervisor, x * wall_width, wall_height / 2, y * wall_depth, wall_width, wall_height, wall_depth)
 
     # Run the simulation step to update the world
     while supervisor.step(32) != -1:
