@@ -25,7 +25,9 @@ data_files.append(('share/' + package_name + '/worlds', [
     'worlds/turtlebot3_burger_example.wbt', 'worlds/.turtlebot3_burger_example.wbproj',
 ]))
 data_files.append(('share/' + package_name, ['package.xml']))
-
+data_files.append(('share/' + package_name + '/scripts', [
+    'scripts/generate_world.py',
+]))
 
 setup(
     name=package_name,

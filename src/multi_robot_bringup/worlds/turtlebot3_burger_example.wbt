@@ -14,8 +14,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation 0.673674734877502 -0.1406828185387477 -0.7255140909422239 3.244123628785452
-  position -1.2121730431610924 -1.9835923559670514 12.310783686345742
+  orientation 0.26983656448337373 -0.30278115419745766 -0.9140633463445874 4.316152809118774
+  position 1.1498736435876222 -2.829379731434516 3.693711423807614
   follow "TurtleBot3Burger:LDS-01"
 }
 TexturedBackground {
@@ -23,7 +23,7 @@ TexturedBackground {
   skybox FALSE
 }
 TurtleBot3Burger {
-  translation 1.49 0 0
+  translation -5.500 -0.500 0.100
   name "TurtleBot3Burger_0"
   controller "<extern>"
   controllerArgs [
@@ -43,7 +43,7 @@ TurtleBot3Burger {
   ]
 }
 TurtleBot3Burger {
-  translation 2.29 0 0.1
+  translation 1.000 0.000 0.100
   name "TurtleBot3Burger_1"
   controller "<extern>"
   controllerArgs [
@@ -63,7 +63,7 @@ TurtleBot3Burger {
   ]
 }
 TurtleBot3Burger {
-  translation 1.29 0 0.1
+  translation -2.000 0.750 0.100
   name "TurtleBot3Burger_2"
   controller "<extern>"
   controllerArgs [
@@ -83,7 +83,7 @@ TurtleBot3Burger {
   ]
 }
 TurtleBot3Burger {
-  translation 1.0 0 0.1
+  translation -1.000 0.000 0.100
   name "TurtleBot3Burger_3"
   controller "<extern>"
   controllerArgs [
@@ -103,8 +103,108 @@ TurtleBot3Burger {
   ]
 }
 TurtleBot3Burger {
-  translation 1.1 0 0.1
+  translation -0.250 3.250 0.100
   name "TurtleBot3Burger_4"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation -7.000 -1.750 0.100
+  name "TurtleBot3Burger_5"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation -1.000 3.000 0.100
+  name "TurtleBot3Burger_6"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation -5.250 2.250 0.100
+  name "TurtleBot3Burger_7"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation -3.250 -2.000 0.100
+  name "TurtleBot3Burger_8"
+  controller "<extern>"
+  controllerArgs [
+    ""
+  ]
+  extensionSlot [
+    Solid {
+      name "imu_link"
+    }
+    GPS {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+TurtleBot3Burger {
+  translation 0.750 -1.250 0.100
+  name "TurtleBot3Burger_9"
   controller "<extern>"
   controllerArgs [
     ""

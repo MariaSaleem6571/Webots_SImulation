@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright 1996-2023 Cyberbotics Ltd.
 #
@@ -30,7 +30,7 @@ from webots_ros2_driver.utils import controller_url_prefix
 
 
 
-NUM_ROBOT = 5
+NUM_ROBOT = 10
 
 
 def get_ros2_nodes(*args):
