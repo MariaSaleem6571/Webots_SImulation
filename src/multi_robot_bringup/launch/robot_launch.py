@@ -28,10 +28,7 @@ from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
 from webots_ros2_driver.utils import controller_url_prefix
 
-
-
 NUM_ROBOT = 10
-
 
 def get_ros2_nodes(*args):
     package_dir = get_package_share_directory('multi_robot_bringup')
@@ -40,7 +37,7 @@ def get_ros2_nodes(*args):
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
 
     # TODO: Revert once the https://github.com/ros-controls/ros2_control/pull/444 PR gets into the release
-    controller_manager_timeout = ['--controller-manager-timeout', str(NUM_ROBOT*500)]
+    controller_manager_timeout = ['--controller-manager-timeout', str(NUM_ROBOT*5000)]
     controller_manager_prefix = 'python.exe' if os.name == 'nt' else ''
 
     use_deprecated_spawner_py = 'ROS_DISTRO' in os.environ and os.environ['ROS_DISTRO'] == 'foxy'
@@ -69,7 +66,9 @@ def get_ros2_nodes(*args):
 
         if 'ROS_DISTRO' in os.environ and os.environ['ROS_DISTRO'] in ['humble', 'rolling']:
             mappings.append(('/diffdrive_controller/odom', 'turtle_bot_{}/odom'.format(i)))
-    
+        else:
+            mappings.append(('/odom', 'turtle_bot_{}/odom'.format(i)))
+
         turtlebot_driver = Node(
             package='webots_ros2_driver',
             executable='driver',

@@ -139,7 +139,3 @@ if __name__ == "__main__":
     webot_map.configMainArena()
     webot_map.createWalls()
     webot_map.createRobots()
-
-    
-    
-
